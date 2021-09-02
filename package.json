@@ -1,5 +1,5 @@
 {
-  "name": "jquery-getjs",
+  "name": "@amprogramacion/jquery-getjs",
   "version": "1.0.0",
   "description": "jquery-getjs is a jquery-based library that allows you to capture the GET parameters through the browser's URL.",
   "main": "index.js",
