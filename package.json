@@ -2,7 +2,7 @@
   "name": "jquery-getjs",
   "version": "1.0.1",
   "description": "jquery-getjs is a jquery-based library that allows you to capture the GET parameters through the browser's URL.",
-  "main": "index.js",
+  "main": "build/jquery-getjs.js",
   "directories": {
     "test": "tests"
   },
