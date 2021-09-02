@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+This file is a part of npm packet jquery-getjs
+
+Created and distributed by amprogramacion, with GPL license 3.0
+-->
+<html>
+    <head>
+        <title>jquery-getjs example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../build/jquery-getjs.js"></script>
+    </head>
+    <body>
+        <div>
+            You must call this file with a get param to test it. for example:  test.html?name=drew<br>
+            If you do so, then a alert() shows the content of the "name" variable.
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                /* First, call a function without callback */
+
+                var test1 = $.getjs("name"); //if get param is empty, it returns ""
+                alert("Test 1: Without callback. ?name=" + test1);
+
+                /* Second call, with a success callback */
+
+                $.getjs("name", function (value) {
+                    alert("Test 2: Wow it works, " + value + "!");
+                });
+                
+                /* Third call, with fail callback */
+                
+                $.getjs("surname", function(value) {
+                    alert("Test 3 (callbackDone): Your surname is "+value);
+                }, function() {
+                    alert("Test 3 (callbackFail): You need to provide a surname");
+                });
+            });
+        </script>
+    </body>
+</html>

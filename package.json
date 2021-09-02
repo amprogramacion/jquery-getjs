@@ -1,0 +1,36 @@
+{
+  "name": "jquery-getjs",
+  "version": "1.0.0",
+  "description": "jquery-getjs is a jquery-based library that allows you to capture the GET parameters through the browser's URL.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+"np": {
+    "yarn": false,
+    "contents": "dist"
+},
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amprogramacion/jquery-getjs.git"
+  },
+  "keywords": [
+    "get",
+    "params",
+    "getjs",
+    "get"
+  ],
+  "author": "amprogramacion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amprogramacion/jquery-getjs/issues"
+  },
+  "homepage": "https://github.com/amprogramacion/jquery-getjs#readme",
+  "dependencies": {
+    "jquery": "^3.3.0"
+  },
+  "devDependencies": {}
+}
